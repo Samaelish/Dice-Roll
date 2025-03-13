@@ -23,13 +23,13 @@ function DiceRolling() {
   const dieClassname = `die ${isRolling ? 'die-shaking' : ''}`
   return (
     <div className='dice-container'>
-      <h2>Dice Rolling</h2>
+      <h2>Игральные кости</h2>
       <div className='dice'>
         <div className={dieClassname}>{die1}</div>
         <div className={dieClassname}>{die2}</div>
       </div>
       <button disabled={isRolling} onClick={roll}>
-        {isRolling ? 'Rolling' : 'Roll Dice!'}
+        {isRolling ? 'Бросаем' : 'Бросай кости!'}
       </button>
     </div>
   )
